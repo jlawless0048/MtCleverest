@@ -1,9 +1,11 @@
 import java.io.*; 
 import java.util.Scanner;
 
-public class methods
+public class Testers
 {
-    public void isPhrase(String str) throws IOException {    
+   public Testers(){
+    }
+   public boolean isPhrase(String str) throws IOException {    
     Scanner reader = new Scanner(new File("texts/phrases.txt"));
     Scanner readerTwo = new Scanner(new File("texts/phrases.txt")); 
     int arrayCount = 0;
@@ -20,9 +22,10 @@ public class methods
     }
     
     for(String element : phrase){
-        if(str.equals(element)){
-            
+        if(str.contains(element)){
+            return true;
         } 
     }
+    return false;
    }
 }
