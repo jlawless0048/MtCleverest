@@ -78,6 +78,9 @@ public class Testers
        if(str == "false"){
            return responceRandom();
         }
+       else if(str.contains("_true")){
+           //wip
+        } 
        return "";    
     }
     
