@@ -6,8 +6,6 @@ import java.io.*;
 public class main{
 	public static void main(String[] args)
 	{
-		main talker = new main();
-		
 		System.out.println ("Hello...");
 		Scanner res = new Scanner (System.in);
 		String response = res.nextLine();
