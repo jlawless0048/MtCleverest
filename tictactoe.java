@@ -4,18 +4,20 @@
  * Its Tic-Tac-Toe made to be implemented into Mt. Cleverest!
  *
  * Hunter Stewart
- * 1.0
+ * 1.1
  */
 import java.util.Random;
 import java.util.Scanner;
 
 public class tictactoe
 {
-    public static void main (String [] args){
+    public tictactoe(){
+    }
+    public void startGame(){
         //Variable Declaration
         int d7 = 0, d8 = 0, d9 = 0, d4 = 0, d5 = 0, d6 = 0, d1 = 0, d2 = 0, d3 = 0;
         double in;
-        int rin, abs;
+        int rin = 0, abs;
         
         //Object Initialization
         Scanner scanboi = new Scanner(System.in);
@@ -111,9 +113,19 @@ public class tictactoe
         
         //Player Phase
         while(true){
+        
+        while(true){
+        try{
             System.out.println("Select a Square.");
             in = scanboi.nextDouble();
             rin = (int)in;
+            break;
+        } catch (Exception e){
+            System.out.println("That's not valid!");
+            break;
+        }
+    }
+    
             if(d1 == 0 && rin == 1){
                 System.out.println("You select Square 1");
                 d1 = 1;
@@ -385,6 +397,34 @@ public class tictactoe
                 else if (abs == 4 && d3 == 0){
                     System.out.println("I choose Square 3.");
                     d3 = 2;
+                    break;
+                }
+            }
+            else{
+                abs = randy.nextInt(5) + 1;
+                if (abs == 1 && d8 == 0){
+                    System.out.println("I choose Square 8.");
+                    d8 = 2;
+                    break;
+                }
+                else if (abs == 2 && d4 == 0){
+                    System.out.println("I choose Square 4.");
+                    d4 = 2;
+                    break;
+                }
+                else if (abs == 3 && d5 == 0){
+                    System.out.println("I choose Square 5.");
+                    d5 = 2;
+                    break;
+                }
+                else if (abs == 4 && d6 == 0){
+                    System.out.println("I choose Square 6.");
+                    d6 = 2;
+                    break;
+                }
+                else if (abs == 5 && d2 == 0){
+                    System.out.println("I choose Square 2.");
+                    d2 = 2;
                     break;
                 }
             }
