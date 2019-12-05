@@ -71,7 +71,7 @@ public class Testers
         count++;
     }
     
-      return resRan[rand.nextInt(count)];
+    return resRan[rand.nextInt(count)];
    }
     
    public String responce(String str) throws IOException {
