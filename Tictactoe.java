@@ -9,9 +9,9 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class tictactoe
+public class Tictactoe
 {
-    public tictactoe(){
+    public Tictactoe(){
     }
     public void startGame(){
         //Variable Declaration
@@ -122,7 +122,7 @@ public class tictactoe
             break;
         } catch (Exception e){
             System.out.println("That's not valid!");
-            break;
+            scanboi.nextLine();
         }
     }
     
