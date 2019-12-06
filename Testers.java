@@ -47,7 +47,8 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element)){
+        if(str.contains(" " + element) || str.contains(" " + element + "." ) || str.contains(" " + element + "!") || str.contains(" " + element + "?") 
+        || str.contains(element + " ") ){
             return element + "_true";
         } 
     }
