@@ -80,7 +80,6 @@ public class Testers
            return responceRandom();
         }
        else if(str.contains("_true")){
-           //wip
         } 
        return "";    
     }
