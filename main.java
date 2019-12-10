@@ -9,7 +9,7 @@ public class main{
 		System.out.println ("Hello...");
 		Scanner res = new Scanner (System.in);
 		String response = res.nextLine();
-		response.toLowerCase();
+		response = response.toLowerCase();
 		
 		while (!response.equals("bye") || !response.equals("goodbye")
 		|| !response.equals("end"))
@@ -17,5 +17,6 @@ public class main{
 			System.out.println("");
 			response = res.nextLine();
 		}
+		System.out.println ("Bye...");
 	}
 }
