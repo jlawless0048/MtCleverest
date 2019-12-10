@@ -9,10 +9,12 @@ public class testetts
         Scanner scan = new Scanner(System.in);
         String res;
         String str = "";
-        System.out.println("Enter: ");    
+        System.out.println("Hello!");    
+        while(true){
         str = scan.nextLine();
         res = test.responce(str);
         System.out.println(res);
+    }
     }
     
 }
