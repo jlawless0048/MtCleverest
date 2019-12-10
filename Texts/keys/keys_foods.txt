@@ -5,3 +5,7 @@ apple
 orange
 grapefruit
 banana
+pizza
+fries
+chicken
+beef

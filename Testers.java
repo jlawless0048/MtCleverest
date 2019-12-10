@@ -97,15 +97,40 @@ public class Testers
     
     return resRan[rand.nextInt(count)];
    }
-    
+   public String phraseResponce(String str) throws IOException{
+       return "";
+    }
    public String responce(String str) throws IOException {
-       boolean test1, test2;
-       String test3;
-       test1 = isKeyFood(str);
-       test2 = isKeyPet(str);
-       test3 = isPhrase(str);
-       
-       if(test1 == true){
+       boolean testFood, testPet;
+       String testPhrase , gate;
+       testFood = isKeyFood(str);
+       testPet = isKeyPet(str);
+       testPhrase = isPhrase(str);
+       Scanner tacHang = new Scanner(System.in);
+       if(str.contains("tictactoe")){
+           System.out.println("Do you want to play tick tac toe?");
+           gate = tacHang.nextLine();
+           if(gate.contains("yes")){
+                Tictactoe tick = new Tictactoe();
+                tick.startGame();
+            }
+           return "";
+        }
+        
+       else if(str.contains("hangman")){
+           System.out.println("Do you want to play hangman?");
+           gate = tacHang.nextLine();
+           if(gate.contains("yes")){
+                Hangman hanger = new Hangman();
+                hanger.startGame();
+            }
+           return "";
+        }
+
+
+       else if(testPhrase.contains("_True"))
+            return phraseResponce(testPhrase);
+       else if(testFood == true){
            Scanner reader = new Scanner(new File("texts/responces/key_food_responce.txt"));
            Scanner readerTwo = new Scanner(new File("texts/responces/key_food_responce.txt")); 
            Random rand = new Random();
@@ -125,7 +150,7 @@ public class Testers
         return resRan[rand.nextInt(count)];
         }
        
-       else if(test2 == true){
+       else if(testPet == true){
           Scanner reader = new Scanner(new File("texts/responces/key_pets_responce.txt"));
           Scanner readerTwo = new Scanner(new File("texts/responces/key_pets_responce.txt")); 
           Random rand = new Random();
@@ -144,7 +169,8 @@ public class Testers
     
         return resRan[rand.nextInt(count)];
         }
-       return "This is bad";
+       else
+            return responceRandom();
     }
     
 }
