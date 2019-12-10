@@ -122,7 +122,7 @@ public class Tictactoe
             break;
         } catch (Exception e){
             System.out.println("That's not valid!");
-            scanboi.nextLine();
+            break;
         }
     }
     
