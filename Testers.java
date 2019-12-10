@@ -29,7 +29,9 @@ public class Testers
     }
     return "false";
    }
-
+   public String mirrorPhrase(String str, String strTwo){
+    return "";
+    } 
    public boolean isKeyFood(String str) throws IOException { 
     Scanner reader = new Scanner(new File("texts/keys/keys_foods.txt"));
     Scanner readerTwo = new Scanner(new File("texts/keys/keys_foods.txt")); 
@@ -53,7 +55,29 @@ public class Testers
     }
     return false;
    }
-   
+   public boolean isKeyFamily(String str) throws IOException { 
+    Scanner reader = new Scanner(new File("texts/keys/keys_family.txt"));
+    Scanner readerTwo = new Scanner(new File("texts/keys/keys_family.txt")); 
+    int arrayCount = 0;
+    while(reader.hasNext()){
+        reader.nextLine();
+        arrayCount++;
+    }   
+    String[] key = new String[arrayCount];
+    int count = 0;
+    while (readerTwo.hasNext()){
+        String stringuno = readerTwo.nextLine();
+        key[count] = stringuno;
+        count++;
+    }
+    
+    for(String element : key){
+        if(str.contains(element)){
+            return true;
+        } 
+    }
+    return false;
+   }
    public boolean isKeyPet(String str) throws IOException { 
     Scanner reader = new Scanner(new File("texts/keys/keys_pets.txt"));
     Scanner readerTwo = new Scanner(new File("texts/keys/keys_pets.txt")); 
