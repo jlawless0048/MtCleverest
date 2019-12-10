@@ -107,7 +107,10 @@ public class Testers
        testPet = isKeyPet(str);
        testPhrase = isPhrase(str);
        Scanner tacHang = new Scanner(System.in);
-       if(str.contains("tictactoe")){
+       if(str.contains("goodbye")){
+           return "oh, I see how it is. bye.";
+        }
+       else if(str.contains("tictactoe")){
            System.out.println("Do you want to play tick tac toe?");
            gate = tacHang.nextLine();
            if(gate.contains("yes")){
@@ -126,7 +129,6 @@ public class Testers
             }
            return "";
         }
-
 
        else if(testPhrase.contains("_True"))
             return phraseResponce(testPhrase);
