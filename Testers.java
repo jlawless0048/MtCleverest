@@ -102,9 +102,9 @@ public class Testers
     return false;
    }
    
-   public String responceRandom() throws IOException{
-    Scanner reader = new Scanner(new File("texts/responces/random.txt"));
-    Scanner readerTwo = new Scanner(new File("texts/responces/random.txt")); 
+   public String responseRandom() throws IOException{
+    Scanner reader = new Scanner(new File("texts/responses/random.txt"));
+    Scanner readerTwo = new Scanner(new File("texts/responses/random.txt")); 
     Random rand = new Random();
     int arrayCount = 0;
     while(reader.hasNext()){
@@ -121,10 +121,10 @@ public class Testers
     
     return resRan[rand.nextInt(count)];
    }
-   public String phraseResponce(String str) throws IOException{
+   public String phraseresponse(String str) throws IOException{
        return "";
     }
-   public String responce(String str) throws IOException {
+   public String response(String str) throws IOException {
        boolean testFood, testPet;
        String testPhrase , gate;
        testFood = isKeyFood(str);
@@ -155,10 +155,10 @@ public class Testers
         }
 
        else if(testPhrase.contains("_True"))
-            return phraseResponce(testPhrase);
+            return phraseresponse(testPhrase);
        else if(testFood == true){
-           Scanner reader = new Scanner(new File("texts/responces/key_food_responce.txt"));
-           Scanner readerTwo = new Scanner(new File("texts/responces/key_food_responce.txt")); 
+           Scanner reader = new Scanner(new File("texts/responses/key_food_response.txt"));
+           Scanner readerTwo = new Scanner(new File("texts/responses/key_food_response.txt")); 
            Random rand = new Random();
         int arrayCount = 0;
             while(reader.hasNext()){
@@ -177,8 +177,8 @@ public class Testers
         }
        
        else if(testPet == true){
-          Scanner reader = new Scanner(new File("texts/responces/key_pets_responce.txt"));
-          Scanner readerTwo = new Scanner(new File("texts/responces/key_pets_responce.txt")); 
+          Scanner reader = new Scanner(new File("texts/responses/key_pets_response.txt"));
+          Scanner readerTwo = new Scanner(new File("texts/responses/key_pets_response.txt")); 
           Random rand = new Random();
         int arrayCount = 0;
            while(reader.hasNext()){
@@ -196,7 +196,7 @@ public class Testers
         return resRan[rand.nextInt(count)];
         }
        else
-            return responceRandom();
+            return responseRandom();
     }
     
 }
