@@ -1,3 +1,4 @@
+
 import java.io.*; 
 import java.util.Scanner;
 import java.util.Random;
@@ -14,6 +15,9 @@ public class testetts
         str = scan.nextLine();
         res = test.responce(str);
         System.out.println(res);
+        if(str.equals("goodbye")){
+            break;
+        }
     }
     }
     
