@@ -264,7 +264,7 @@ public class Testers
     return resRan[rand.nextInt(count)];
    }
    public String phraseresponse(String str) throws IOException{
-       return "";
+       return "I havn't written this part yet so please don't be upset with me and say something else. :(";
     }
    public String response(String str) throws IOException {
        boolean testFood, testPet, testBye, testFamily, testAnimal, testHello, testHoliday, testNoNoWord, testQuestion;
