@@ -6,3 +6,4 @@ when
 who
 which
 do
+how
