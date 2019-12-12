@@ -29,10 +29,10 @@ public class starter
         str = scan.nextLine();
         str = str.trim();
         str = str.toLowerCase();
-        str = str + " ";
+        str = " " + str + " ";
         res = test.response(str);
         System.out.println(res);
-        if(str.equals("goodbye ")){
+        if(str.equals(" goodbye ")){
             break;
         }
     }

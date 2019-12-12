@@ -54,7 +54,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -78,7 +78,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -102,7 +102,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -126,7 +126,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -149,7 +149,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -172,7 +172,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -196,7 +196,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -221,7 +221,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "s ")|| str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "s ")|| str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -245,7 +245,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -269,7 +269,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -293,7 +293,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -317,7 +317,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -341,7 +341,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -365,7 +365,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -389,7 +389,7 @@ public class Testers
     }
     
     for(String element : key){
-        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+        if(str.contains(" " + element + " ") || str.contains(" " + element + ".") || str.contains(" " + element + "!") || str.contains(" " + element + "?") || str.contains(" " + element + "-") || str.contains(" " + element + ",")){
             return true;
         } 
     }
@@ -448,6 +448,9 @@ public class Testers
                 Tictactoe tick = new Tictactoe();
                 tick.startGame();
             }
+           else{
+               return "Fine.";
+            }
            return "";
         }
         
@@ -457,6 +460,9 @@ public class Testers
            if(gate.contains("yes")){
                 Hangman hanger = new Hangman();
                 hanger.startGame();
+            }
+            else{
+                return "Fine then.";
             }
            return "";
         }
