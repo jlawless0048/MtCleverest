@@ -1,6 +1,14 @@
 import java.io.*; 
 import java.util.Scanner;
 import java.util.Random;
+/**
+ * This is the class that contains many of the testing methods
+ * and is also used to call other methods in the bot.
+ * It contains testers for keywords mostly.
+ * 
+ * @author Josh Lawless, Hunter Stewart, Drew Malapanes.
+ * @version 12/12/19
+ */
 
 public class Testers
 {
@@ -32,6 +40,30 @@ public class Testers
    public boolean isKeyQuestion(String str) throws IOException { 
     Scanner reader = new Scanner(new File("texts/keys/keys_question.txt"));
     Scanner readerTwo = new Scanner(new File("texts/keys/keys_question.txt")); 
+    int arrayCount = 0;
+    while(reader.hasNext()){
+        reader.nextLine();
+        arrayCount++;
+    }   
+    String[] key = new String[arrayCount];
+    int count = 0;
+    while (readerTwo.hasNext()){
+        String stringuno = readerTwo.nextLine();
+        key[count] = stringuno;
+        count++;
+    }
+    
+    for(String element : key){
+        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+            return true;
+        } 
+    }
+    return false;
+   }
+   
+   public boolean isKeyBored(String str) throws IOException { 
+    Scanner reader = new Scanner(new File("texts/keys/keys_bored.txt"));
+    Scanner readerTwo = new Scanner(new File("texts/keys/keys_bored.txt")); 
     int arrayCount = 0;
     while(reader.hasNext()){
         reader.nextLine();
@@ -126,6 +158,30 @@ public class Testers
    public boolean isKeyBye(String str) throws IOException { 
     Scanner reader = new Scanner(new File("texts/keys/keys_bye.txt"));
     Scanner readerTwo = new Scanner(new File("texts/keys/keys_bye.txt")); 
+    int arrayCount = 0;
+    while(reader.hasNext()){
+        reader.nextLine();
+        arrayCount++;
+    }   
+    String[] key = new String[arrayCount];
+    int count = 0;
+    while (readerTwo.hasNext()){
+        String stringuno = readerTwo.nextLine();
+        key[count] = stringuno;
+        count++;
+    }
+    
+    for(String element : key){
+        if(str.contains(element + " ") || str.contains(element + ".") || str.contains(element + "!") || str.contains(element + "?") || str.contains(element + "-") || str.contains(element + ",")){
+            return true;
+        } 
+    }
+    return false;
+   }
+   
+   public boolean isKeyFiller(String str) throws IOException { 
+    Scanner reader = new Scanner(new File("texts/keys/keys_filler.txt"));
+    Scanner readerTwo = new Scanner(new File("texts/keys/keys_filler.txt")); 
     int arrayCount = 0;
     while(reader.hasNext()){
         reader.nextLine();
@@ -264,14 +320,16 @@ public class Testers
     return resRan[rand.nextInt(count)];
    }
    public String phraseresponse(String str) throws IOException{
-       return "";
+       return "I havn't written this part yet so please don't be upset with me and say something else. :(";
     }
    public String response(String str) throws IOException {
-       boolean testFood, testPet, testBye, testFamily, testAnimal, testHello, testHoliday, testNoNoWord, testQuestion;
+       boolean testFood, testPet, testFiller, testBye, testBored, testFamily, testAnimal, testHello, testHoliday, testNoNoWord, testQuestion;
        String testPhrase , gate;
        testFood = isKeyFood(str);
        testPet = isKeyPet(str);
        testBye = isKeyBye(str);
+       testFiller = isKeyFiller(str);
+       testBored = isKeyBored(str);
        testFamily = isKeyFamily(str);
        testAnimal = isKeyAnimal(str);
        testPhrase = isPhrase(str);
@@ -309,6 +367,27 @@ public class Testers
         else if(testNoNoWord == true){
            Scanner reader = new Scanner(new File("texts/responses/key_nonoword_response.txt"));
            Scanner readerTwo = new Scanner(new File("texts/responses/key_nonoword_response.txt")); 
+           Random rand = new Random();
+        int arrayCount = 0;
+            while(reader.hasNext()){
+                reader.nextLine();
+            arrayCount++;
+        }   
+        String[] resRan = new String[arrayCount];
+        int count = 0;
+        while (readerTwo.hasNext()){
+            String stringuno = readerTwo.nextLine();
+            resRan[count] = stringuno;
+            count++;
+        }
+        
+        
+    
+        return resRan[rand.nextInt(count)];
+        }
+        else if(testFiller == true){
+           Scanner reader = new Scanner(new File("texts/responses/key_filler_response.txt"));
+           Scanner readerTwo = new Scanner(new File("texts/responses/key_filler_response.txt")); 
            Random rand = new Random();
         int arrayCount = 0;
             while(reader.hasNext()){
@@ -394,6 +473,27 @@ public class Testers
         return resRan[rand.nextInt(count)];
         }
        
+        else if(testBored == true){
+           Scanner reader = new Scanner(new File("texts/responses/key_bored_response.txt"));
+           Scanner readerTwo = new Scanner(new File("texts/responses/key_bored_response.txt")); 
+           Random rand = new Random();
+        int arrayCount = 0;
+            while(reader.hasNext()){
+                reader.nextLine();
+            arrayCount++;
+        }   
+        String[] resRan = new String[arrayCount];
+        int count = 0;
+        while (readerTwo.hasNext()){
+            String stringuno = readerTwo.nextLine();
+            resRan[count] = stringuno;
+            count++;
+        }
+        
+        
+    
+        return resRan[rand.nextInt(count)];
+        }
        
        else if(testFood == true){
            Scanner reader = new Scanner(new File("texts/responses/key_food_response.txt"));
