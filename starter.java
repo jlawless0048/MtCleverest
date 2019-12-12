@@ -10,12 +10,23 @@ public class starter
         Scanner scan = new Scanner(System.in);
         String res;
         String str = "";
-        System.out.println("Hello!");    
+        System.out.println("    __  _____       ________                              __ ");                                 
+        System.out.println("   /  |/  / /_     / ____/ /__ _   _____  ________  _____/ /_");
+        System.out.println("  / /|_/ / __/    / /   / / _ \\ | / / _ \\/ ___/ _ \\/ ___/ __/");
+        System.out.println(" / /  / / /__    / /___/ /  __/ |/ /  __/ /  /  __(__  ) /_  ");
+        System.out.println("/_/  /_/\\__(_)   \\____/_/\\___/|___/\\___/_/   \\___/____/\\__/  ");
+        System.out.println("                                                             ");
+        System.out.println("Say Goodbye to End.");
+        System.out.println("");
+        System.out.println("Oh, its you. Hi.");    
         while(true){
         str = scan.nextLine();
+        str = str.trim();
+        str = str.toLowerCase();
+        str = str + " ";
         res = test.response(str);
         System.out.println(res);
-        if(str.equals("goodbye")){
+        if(str.equals("goodbye ")){
             break;
         }
     }
