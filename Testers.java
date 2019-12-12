@@ -1,6 +1,14 @@
 import java.io.*; 
 import java.util.Scanner;
 import java.util.Random;
+/**
+ * This is the class that contains many of the testing methods
+ * and is also used to call other methods in the bot.
+ * It contains testers for keywords mostly.
+ * 
+ * @author Josh Lawless, Hunter Stewart, Drew Malapanes.
+ * @version 12/12/19
+ */
 
 public class Testers
 {
